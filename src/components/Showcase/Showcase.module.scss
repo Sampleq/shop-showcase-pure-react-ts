@@ -1,0 +1,15 @@
+.showcase {
+  flex-grow: 1;
+
+  .wrapper {
+    width: 96%;
+    max-width: 1200px;
+    margin: 3rem auto 4rem;
+  }
+
+  .toast {
+    background-color: azure;
+    color: darkblue;
+    font-weight: 400;
+  }
+}

@@ -1,0 +1,79 @@
+.basketList {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 50rem;
+  max-width: 94%;
+
+  padding-bottom: 2rem;
+  background-color: mintcream;
+
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.14), 0 3px 20px rgba(0, 0, 0, 0.12),
+    0 1px 25px 0 rgba(0, 0, 0, 0.2);
+
+  animation: show 300ms ease-in;
+  will-change: transform;
+
+  .title {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+
+    background-color: dodgerblue;
+    color: white;
+    padding: 1rem;
+  }
+
+  .list {
+    padding: 0 2rem;
+  }
+
+  .total {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 2.5rem;
+  }
+
+  .close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+
+    cursor: pointer;
+
+    svg {
+      font-size: 3rem;
+      color: deeppink;
+    }
+  }
+  .submit {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+
+    padding: 1rem 2rem;
+    border-radius: 0.2rem;
+    background-color: dodgerblue;
+    color: white;
+    transition: 0.3s;
+
+    cursor: pointer;
+
+    &:hover {
+      background-color: blue;
+    }
+  }
+}
+
+@keyframes show {
+  0% {
+    transform: translate(-50%, 50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+}

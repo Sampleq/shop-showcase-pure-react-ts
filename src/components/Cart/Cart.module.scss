@@ -1,0 +1,28 @@
+.cart {
+  position: fixed;
+
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 9;
+
+  padding: 1.5rem;
+  background-color: mediumblue;
+
+  cursor: pointer;
+
+  display: flex;
+  gap: 0.5rem;
+
+  @media (min-width: 1400px) {
+    top: 10rem;
+    bottom: unset;
+  }
+
+  .quantity {
+    color: white;
+  }
+
+  .icon {
+    color: white;
+  }
+}

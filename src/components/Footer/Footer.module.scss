@@ -1,0 +1,25 @@
+@use 'sass:color'; // https://sass-lang.com/documentation/breaking-changes/color-functions/
+
+.footer {
+  $color: dodgerblue;
+  background-color: color.adjust($color, $lightness: 20%);
+  padding: 2rem 4rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .copy {
+    font-size: 1.6rem;
+    color: #fff;
+  }
+
+  ul {
+    display: flex;
+    font-size: 1.8rem;
+    list-style: none;
+    li a {
+      color: #fff;
+    }
+  }
+}
